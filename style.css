@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Background Hero dengan Overlay Biru UPI */
+.hero-section {
+    background: linear-gradient(rgba(30, 58, 138, 0.85), rgba(30, 58, 138, 0.85)), 
+                url('https://images.unsplash.com/photo-1541339906962-d0105e8f0e35?auto=format&fit=crop&q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #1d4ed8;
+}
+
+.btn-primary {
+    background-color: #1d4ed8;
+    color: white !important;
+    padding: 0.6rem 1.5rem;
+    border-radius: 99px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1e3a8a;
+    box-shadow: 0 4px 12px rgba(29, 78, 216, 0.3);
+}
+
+.team-card {
+    padding: 2.5rem 1.5rem;
+    border: 1px solid #f1f5f9;
+    background: white;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+    border-color: #3b82f6;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+.tab-btn {
+    transition: all 0.3s ease;
+}
+
+/* Update latar belakang agar biru solid lebih modern */
+.hero-section {
+    background: #2563eb; /* Biru UPI yang lebih cerah sesuai gambar */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animasi halus saat scroll tetap dipertahankan */
+.nav-link {
+    transition: all 0.3s ease;
+}
+
+/* Penyesuaian tombol Daftar Sekarang agar sesuai gambar referensi */
+.btn-primary {
+    background-color: #1d4ed8;
+    color: white;
+    padding: 0.6rem 2rem;
+    border-radius: 0.75rem; /* Sudut sedikit kotak sesuai gambar baru */
+    font-weight: 600;
+}

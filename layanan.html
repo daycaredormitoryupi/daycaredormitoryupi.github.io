@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Layanan - Daycare Bintang Cemerlang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50">
+
+    <nav class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2 text-blue-700 font-bold text-xl">
+                <i class="fas fa-arrow-left text-sm"></i>
+                <span>Kembali ke Beranda</span>
+            </a>
+        </div>
+    </nav>
+
+    <section class="py-12 px-6">
+        <div class="container mx-auto max-w-4xl">
+            
+            <div class="flex flex-wrap border-b border-gray-200 mb-8">
+                <button onclick="openTab(event, 'prosedur')" class="tab-btn px-6 py-3 font-bold border-b-2 border-blue-600 text-blue-600">Prosedur Pendaftaran</button>
+                <button onclick="openTab(event, 'biaya')" class="tab-btn px-6 py-3 font-bold border-b-2 border-transparent text-gray-500 hover:text-blue-600">Biaya Layanan</button>
+                <button onclick="openTab(event, 'tertib')" class="tab-btn px-6 py-3 font-bold border-b-2 border-transparent text-gray-500 hover:text-blue-600">Tata Tertib</button>
+                <button onclick="openTab(event, 'waktu')" class="tab-btn px-6 py-3 font-bold border-b-2 border-transparent text-gray-500 hover:text-blue-600">Waktu Layanan</button>
+            </div>
+
+            <div id="prosedur" class="tab-content block animate-fadeIn">
+                <h2 class="text-3xl font-bold mb-6">Prosedur Pendaftaran</h2>
+                <div class="space-y-4">
+                    <div class="flex items-start p-4 bg-white rounded-lg shadow-sm">
+                        <span class="bg-blue-700 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 shrink-0">1</span>
+                        <p>Mengisi formulir melalui WhatsApp, Email atau datang langsung ke kantor administrasi daycare.</p>
+                    </div>
+                    <div class="flex items-start p-4 bg-white rounded-lg shadow-sm">
+                        <span class="bg-blue-700 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 shrink-0">2</span>
+                        <p>Melengkapi dokumen administrasi (FC KTP Ortu/Wali, Kartu Keluarga, dan pas foto anak).</p>
+                    </div>
+                    <div class="flex items-start p-4 bg-white rounded-lg shadow-sm">
+                        <span class="bg-blue-700 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 shrink-0">3</span>
+                        <p>Melakukan pembayaran registrasi melalui Virtual Account yang diberikan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="biaya" class="tab-content hidden animate-fadeIn">
+                <h2 class="text-3xl font-bold mb-6">Estimasi Biaya Layanan</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-white rounded-lg shadow-sm overflow-hidden">
+                        <thead class="bg-blue-700 text-white">
+                            <tr>
+                                <th class="p-4 text-left">Dana Pendidikan</th>
+                                <th class="p-4 text-left">Daycare (0-2 Tahun)</th>
+                                <th class="p-4 text-left">Daycare (2-6 Tahun)</th>
+                                <th class="p-4 text-left">Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            <tr>
+                                <td class="p-4 font-semibold">Pendaftaran</td>
+                                <td class="p-4">Rp. 100.000</td>
+                                <td class="p-4">Rp. 100.000</td>
+                                <td class="p-4">1x Pembayaran</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-semibold">Dana Sumbangan Pendidikan</td>
+                                <td class="p-4">Rp. 1.500.000</td>
+                                <td class="p-4">Rp. 1.500.000</td>
+                                <td class="p-4">1x Pembayaran</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-semibold">Perangkat Pengasuhan Daycare</td>
+                                <td class="p-4">Rp. 1.500.000</td>
+                                <td class="p-4">Rp. 1.500.000</td>
+                                <td class="p-4">Setiap Tahun Ajaran</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-semibold">SPP</td>
+                                <td class="p-4">Rp. 1.300.000</td>
+                                <td class="p-4">Rp. 1.350.000</td>
+                                <td class="p-4">Setiap Bulan</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 text-center align-middle, font-semibold">Total</td>
+                                <td class="p-4">Rp. 4.400.000</td>
+                                <td class="p-4">Rp. 4.450.000</td>
+                            </tr>
+                            <tr>
+                        </tbody>
+                    </table>
+                    <p class="mt-4 text-sm text-gray-500">*Biaya dapat berubah sewaktu-waktu sesuai kebijakan daycare.</p>
+                    <p class="mt-4">Penitipan Halfday  : Rp. 75.000</p>
+                    <p class="mt-4">Penitipan Harian   : Rp. 125.000</p>
+                    <p class="mt-4">Penitipan Mingguan : Rp. 75.000</p>
+                    <p class="mt-4">Keterlambatan      : Rp. 35.000/30 Menit</p>
+                    <p class="mt-4">Penjemputan Maksimal Pukul 16.15</p>
+                    <p class="mt-4">Keterlambatan Mulai Pukul 16.30</p>
+                </div>
+                </div>
+            </div>
+
+            <div id="tertib" class="tab-content hidden animate-fadeIn">
+                <h2 class="text-3xl font-bold mb-6">Tata Tertib & Peraturan</h2>
+                <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-orange-500">
+                    <h3 class="font-bold text-xl mb-4 text-orange-600">Informasi Umum</h3>
+                    <ul class="list-disc pl-5 space-y-3">
+                        <li>Dilarang membawa barang berharga/perhiasan berlebih ke area daycare.</li>
+                        <li>Jam menjemput daycare maksimal pukul 16.15 WIB bagi yang telat dikenakan denda sebesar Rp 35.000/30 Menit.</li>
+                        <li>Wajib menjaga kebersihan dan ketenangan di lingkungan daycare.</li>
+                        <li>Penjemputan anak di daycare wajib oleh orang tua kandung atau wali resmi yang terdaftar.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="waktu" class="tab-content hidden animate-fadeIn">
+                <h2 class="text-3xl font-bold mb-6">Waktu Layanan</h2>
+                <div class="bg-white p-8 rounded-lg shadow-sm border-l-4 border-orange-500">
+                    <h3 class="font-bold text-xl mb-4 text-orange-600">Hari Senin s/d Jumat</h3>
+                    <ul class="list-disc pl-5 space-y-3">
+                        <li>Mulai Pukul 07.00 s/d 16.00.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-white py-12 text-center mt-20">
+        <p>© 2026 Daycare Bintang Cemerlang. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabContent, tabBtns;
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            tabBtns = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tabBtns.length; i++) {
+                tabBtns[i].className = tabBtns[i].className.replace(" border-blue-600 text-blue-600", " border-transparent text-gray-500");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " border-blue-600 text-blue-600";
+        }
+    </script>
+</body>
+</html>
